@@ -1,0 +1,9 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>TikTok login</title>
+<body style="font-family:sans-serif;max-width:40em;margin:3em auto;padding:0 1em">
+<h1>Autorizzato</h1>
+<p>Copia questo indirizzo e incollalo nello script <code>tiktok_login</code>:</p>
+<textarea id="u" rows="5" style="width:100%" readonly></textarea>
+<p><button onclick="navigator.clipboard.writeText(u.value);this.textContent='Copiato'">Copia</button></p>
+<script>u.value = location.href</script>
